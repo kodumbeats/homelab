@@ -1,53 +1,55 @@
 <template>
-  <form @submit.prevent="connect">
-    <div class="field">
-      <label class="label">AppID</label>
-      <div class="control">
-        <input
-          v-model="appId"
-          class="input"
-          type="text"
-          placeholder="5fdcff85ebb12"
-        />
+  <div class="login is-flex is-justify-content-center">
+    <form @submit.prevent="connect">
+      <div class="field">
+        <label class="label">AppID</label>
+        <div class="control">
+          <input
+            v-model="appId"
+            class="input"
+            type="text"
+            placeholder="5fdcff85ebb12"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="field">
-      <label class="label">Endpoint</label>
-      <div class="control">
-        <input
-          v-model="endpoint"
-          class="input"
-          type="email"
-          placeholder="http://localhost/v1"
-        />
+      <div class="field">
+        <label class="label">Endpoint</label>
+        <div class="control">
+          <input
+            v-model="endpoint"
+            class="input"
+            type="email"
+            placeholder="http://localhost/v1"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control">
-        <input
-          v-model="email"
-          class="input"
-          type="text"
-          placeholder="example@email.addr"
-        />
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input
+            v-model="email"
+            class="input"
+            type="text"
+            placeholder="example@email.addr"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="field">
-      <label class="label">Password</label>
-      <div class="control">
-        <input
-          v-model="password"
-          class="input"
-          type="email"
-          placeholder="a_$ecUre*pAssw0r6"
-        />
+      <div class="field">
+        <label class="label">Password</label>
+        <div class="control">
+          <input
+            v-model="password"
+            class="input"
+            type="email"
+            placeholder="a_$ecUre*pAssw0r6"
+          />
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </template>
 <script>
 import * as Appwrite from "appwrite";

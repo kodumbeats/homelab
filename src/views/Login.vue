@@ -1,32 +1,53 @@
 <template>
-  <div>
-    <form @submit.prevent="connect">
-      <label
-        >AppID:
-        <input type="text" v-model="appId" />
-      </label>
-      <br />
-      <label
-        >Endpoint:
-        <input type="text" v-model="endpoint" />
-      </label>
-      <br />
-      <button>Connect</button>
-    </form>
-    <form @submit.prevent="login">
-      <label
-        >Email:
-        <input type="email" v-model="email" />
-      </label>
-      <br />
-      <label
-        >Password:
-        <input type="password" v-model="password" />
-      </label>
-      <br />
-      <button>Login</button>
-    </form>
-  </div>
+  <form @submit.prevent="connect">
+    <div class="field">
+      <label class="label">AppID</label>
+      <div class="control">
+        <input
+          v-model="appId"
+          class="input"
+          type="text"
+          placeholder="5fdcff85ebb12"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Endpoint</label>
+      <div class="control">
+        <input
+          v-model="endpoint"
+          class="input"
+          type="email"
+          placeholder="http://localhost/v1"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input
+          v-model="email"
+          class="input"
+          type="text"
+          placeholder="example@email.addr"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Password</label>
+      <div class="control">
+        <input
+          v-model="password"
+          class="input"
+          type="email"
+          placeholder="a_$ecUre*pAssw0r6"
+        />
+      </div>
+    </div>
+  </form>
 </template>
 <script>
 import * as Appwrite from "appwrite";

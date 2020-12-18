@@ -52,7 +52,10 @@ export default {
     login() {
       this.appwrite.account
         .createSession(this.email, this.password)
-        .then(res => console.log(res))
+        .then(res => {
+          console.log(res);
+          this.$router.push("/dash");
+        })
         .catch(err => console.log(err));
     }
   }

@@ -8,6 +8,8 @@
   </form>
 </template>
 <script>
+import * as Appwrite from "appwrite";
+
 export default {
   name: "Login",
   data() {

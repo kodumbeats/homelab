@@ -19,7 +19,7 @@
           <input
             v-model="endpoint"
             class="input"
-            type="email"
+            type="text"
             placeholder="http://localhost/v1"
           />
         </div>
@@ -31,7 +31,7 @@
           <input
             v-model="email"
             class="input"
-            type="text"
+            type="email"
             placeholder="example@email.addr"
           />
         </div>
@@ -43,7 +43,7 @@
           <input
             v-model="password"
             class="input"
-            type="email"
+            type="password"
             placeholder="a_$ecUre*pAssw0r6"
           />
         </div>

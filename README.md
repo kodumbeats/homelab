@@ -1,6 +1,6 @@
 # homelab
 **very much incomplete**
-Self-hosted homelab backend
+Self-hosted homelab powered by [Appwrite](https://appwrite.io) in the back and [Vue](https://vuejs.org) in the front.
 
 ## Project setup
 ```

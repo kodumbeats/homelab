@@ -1,6 +1,6 @@
 <template>
   <div class="login is-flex is-justify-content-center">
-    <form @submit.prevent="connect">
+    <form @submit.prevent="login">
       <div class="field">
         <label class="label">AppID</label>
         <div class="control">
@@ -48,6 +48,7 @@
           />
         </div>
       </div>
+      <button class="button is-primary">Login</button>
     </form>
   </div>
 </template>
@@ -65,14 +66,12 @@ export default {
     };
   },
   methods: {
-    connect() {
+    login() {
       const appwrite = new Appwrite()
         .setEndpoint(this.endpoint)
         .setProject(this.appId);
-      console.log({ appwrite });
       Object.assign(this, { appwrite });
-    },
-    login() {
+
       this.appwrite.account
         .createSession(this.email, this.password)
         .then(res => {

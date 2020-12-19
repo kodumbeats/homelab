@@ -1,4 +1,6 @@
 # homelab
+**very much incomplete**
+Self-hosted homelab backend
 
 ## Project setup
 ```
